@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+       
+   
+
+    <title>Form</title>
+
+  </head>
+  <body>
+  
+
+    <section class="vh-100" >
+      <div class="container">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div class="container h-100" id="container" >
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+      
+                    <form>
+                     
+                      <div class="form-outline mb-4">
+                       
+                        <label for="formGroupExampleInput" class="form-label">Full Name</label>
+                        <input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter full name" required>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        
+                        <label for="formGroupExampleInput" class="form-label">Phone number</label>
+                     <input type="number" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Enter your phone number" required>
+                      </div>
+                      
+                      <div class="form-outline mb-4">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+            
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="custom-file ">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02" required>
+                        </div>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <label for="exampleInputPassword1" class="form-label">Create Password</label>
+                      
+                        <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Enter your password" required>
+                      <span> <i class="bi bi-eye-slash-fill"id="togglePassword"></i></span> 
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger btn-lg" id="signup">Sign up</button>
+                        
+                      </div>
+      
+                      <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u>Login here</u></a></p>
+                     
+                    </form>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+   
+      </div>
+
+	<script>
+		const togglePassword = document.querySelector('#togglePassword');
+
+		const password = document.querySelector('#password');
+
+		togglePassword.addEventListener('click', () => {
+
+			// Toggle the type attribute using
+			// getAttribure() method
+			const type = password
+				.getAttribute('type') === 'password' ?
+				'text' : 'password';
+				
+			password.setAttribute('type', type);
+
+			// Toggle the eye and bi-eye icon
+			this.classList.toggle('bi-eye');
+		});
+	</script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

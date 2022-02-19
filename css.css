@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #ffffff;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  
+}
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+#signup {
+    background-color: #FF4757;
+    color:white;
+    width: 100%;
+}
+
+a, a:hover{
+  color:#333
+}
+
+form i {
+position: absolute;
+right: 65px;
+top: 70%;
+transform: translate(50%);
+cursor: pointer;
+font-size: large;
+
+}
+::placeholder {
+  color: red;
+ font-size: medium;
+  
+}
+.card-body{
+  background-color: #F8F7F9;
+  border-style: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {form i {
+  position: absolute;
+  right: 65px;
+  top: 70%;
+  transform: translate(50%);
+  cursor: pointer;
+  font-size: large;
+  
+  }}
+
+  @media (max-width: 480px) {
+    form i {
+      position: absolute;
+      right: 65px;
+      top: 69%;
+      transform: translate(50%);
+      cursor: pointer;
+      font-size: large;
+      
+      }
+}
